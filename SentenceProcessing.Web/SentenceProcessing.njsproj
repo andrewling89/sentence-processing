@@ -39,12 +39,37 @@
     <Content Include="index.html" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
+    <Content Include="typings\globals\bootstrap\typings.json" />
+    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="typings\globals\grunt\typings.json" />
+    <Content Include="typings\globals\node\typings.json" />
+    <Content Include="typings\globals\systemjs\typings.json" />
+    <Content Include="typings\globals\zone.js\typings.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
+    <Folder Include="app\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\bootstrap\" />
+    <Folder Include="typings\globals\core-js\" />
+    <Folder Include="typings\globals\grunt\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\systemjs\" />
+    <Folder Include="typings\globals\zone.js\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="systemjs.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\grunt\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\systemjs\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\zone.js\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
