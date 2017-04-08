@@ -1,0 +1,8 @@
+{
+  "name": "sentence-processing",
+  "version": "0.0.0",
+  "description": "Sentence Encoding and Decoding Application",
+  "author": {
+    "name": "AndrewLing"
+  }
+}
