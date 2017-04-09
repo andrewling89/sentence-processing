@@ -35,6 +35,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="app\home.component.html" />
+    <Content Include="app\processing\encoding.component.html" />
     <Content Include="css\_colours.scss" />
     <Content Include="css\_app.scss" />
     <Content Include="css\style.scss" />
@@ -51,6 +53,7 @@
     <Content Include="typings\globals\zone.js\typings.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\processing\" />
     <Folder Include="css\" />
     <Folder Include="app\" />
     <Folder Include="typings\" />
@@ -68,7 +71,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\processing\encoding.component.ts" />
+    <TypeScriptCompile Include="app\processing\processing.module.ts" />
+    <TypeScriptCompile Include="app\processing\processing.routing.ts" />
     <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\grunt\index.d.ts" />

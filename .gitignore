@@ -252,5 +252,3 @@ paket-files/
 *.sln.iml
 /SentenceProcessing.Web/.tscache
 /SentenceProcessing.Web/.sass-cache
-/SentenceProcessing.Web/app/*.js
-/SentenceProcessing.Web/app/*.map
