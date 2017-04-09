@@ -1,0 +1,31 @@
+﻿/* System-wide stying. */
+html, body {
+    height: 100%
+}
+
+body
+{
+    background-color: $backgroundColour;
+    color: $textColour;
+    margin: 10px;
+}
+
+.app-container {
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img.comranger-logo {
+    width: 100%;
+    height: calc(40vh);
+}
+
+.spacing-20px
+{
+    height: 20px;
+}
+
+div[class^='col'], div[class*=' col'] {
+    margin-bottom: 10px;
+}

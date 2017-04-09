@@ -34,7 +34,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="app\app.component.html" />
+    <Content Include="css\_colours.scss" />
+    <Content Include="css\_app.scss" />
     <Content Include="css\style.scss" />
+    <Content Include="css\_navbar.scss" />
     <Content Include="Gruntfile.js" />
     <Content Include="index.html" />
     <Content Include="package.json" />
@@ -62,6 +66,8 @@
     <Compile Include="systemjs.config.js" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
