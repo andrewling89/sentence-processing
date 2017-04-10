@@ -80,6 +80,7 @@
     <TypeScriptCompile Include="app\processing\encoding.component.ts" />
     <TypeScriptCompile Include="app\processing\processing.module.ts" />
     <TypeScriptCompile Include="app\processing\processing.routing.ts" />
+    <TypeScriptCompile Include="app\processing\services\sentenceProcessing.decoding.spec.ts" />
     <TypeScriptCompile Include="app\processing\services\sentenceProcessing.encoding.spec.ts" />
     <TypeScriptCompile Include="app\processing\services\sentenceProcessingService.ts" />
     <TypeScriptCompile Include="typings\globals\bootstrap\index.d.ts" />

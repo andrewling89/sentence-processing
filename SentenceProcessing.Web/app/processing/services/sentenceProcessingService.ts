@@ -41,4 +41,8 @@ export class SentenceProcessingService {
 
         return encodedWord;
     }
+
+    public decodeSentence(sentence: string): string {
+        return null;
+    }
 }
