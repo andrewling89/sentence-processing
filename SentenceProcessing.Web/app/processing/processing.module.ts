@@ -6,6 +6,7 @@ import { RouterModule } from "@angular/router";
 import { SentenceProcessingService } from "./services/sentenceProcessingService";
 
 import { EncodingComponent } from "./encoding.component";
+import { DecodingComponent } from "./decoding.component";
 
 import { processingRoutes } from "./processing.routing";
 
@@ -16,7 +17,7 @@ import { processingRoutes } from "./processing.routing";
         RouterModule.forChild(processingRoutes)
     ],
     providers: [SentenceProcessingService],
-    declarations: [EncodingComponent],
-    exports: [EncodingComponent]
+    declarations: [EncodingComponent, DecodingComponent],
+    exports: [EncodingComponent, DecodingComponent]
 })
 export class ProcessingModule { }

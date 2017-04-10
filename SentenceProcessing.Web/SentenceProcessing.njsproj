@@ -36,6 +36,7 @@
   <ItemGroup>
     <Content Include="app\app.component.html" />
     <Content Include="app\home.component.html" />
+    <Content Include="app\processing\decoding.component.html" />
     <Content Include="app\processing\encoding.component.html" />
     <Content Include="css\_colours.scss" />
     <Content Include="css\_app.scss" />
@@ -77,6 +78,7 @@
     <TypeScriptCompile Include="app\app.routing.ts" />
     <TypeScriptCompile Include="app\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\processing\decoding.component.ts" />
     <TypeScriptCompile Include="app\processing\encoding.component.ts" />
     <TypeScriptCompile Include="app\processing\processing.module.ts" />
     <TypeScriptCompile Include="app\processing\processing.routing.ts" />

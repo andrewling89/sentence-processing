@@ -1,0 +1,28 @@
+﻿<div id="decodingPage">
+    <form [formGroup]="decodingForm" (ngSubmit)="decodeSentence($event)">
+        <div class="row form-group" [ngClass]="{ 'has-error': !encodedSentence.valid && encodedSentence.touched }">
+            <div class="col-xs-12">
+                <label class="control-label" for="encodedSentence">Encoded Sentence:</label>
+            </div>
+            <div clsss="col-xs-12">
+                <input id="encodedSentence" type="text" class="form-control" formControlName="encodedSentence" />
+            </div>
+            <div class="col-xs-12" *ngIf="!encodedSentence.valid && encodedSentence.touched">
+                <div class="alert alert-danger">Encoded Sentence is required.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="!decodingForm.valid">Decode</button>
+            </div>
+        </div>
+        <div class="row form-group" *ngIf="decodedSentence.value.length > 0">
+            <div class="col-xs-12">
+                <label class="control-label" for="decodedSentence">Decoded Sentence:</label>
+            </div>
+            <div clsss="col-xs-12">
+                <input id="decodedSentence" type="text" class="form-control" formControlName="decodedSentence" />
+            </div>
+        </div>
+    </form>
+</div>

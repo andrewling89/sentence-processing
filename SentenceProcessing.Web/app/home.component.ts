@@ -12,4 +12,8 @@ export class HomeComponent {
     private openEncodeSentence() {
         this.router.navigate(["/encode"]);
     };
+
+    private openDecodeSentence() {
+        this.router.navigate(["/decode"]);
+    };
 }
