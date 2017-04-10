@@ -1,10 +1,11 @@
 ﻿import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-import { RouterModule } from '@angular/router';
+import { RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home.component";
 import { ProcessingModule } from "./processing/processing.module";
+import { HistoryModule } from "./history/history.module";
 
 import { appRoutes, appRoutingProviders } from './app.routing';
 
@@ -12,6 +13,7 @@ import { appRoutes, appRoutingProviders } from './app.routing';
     imports: [
         BrowserModule,
         ProcessingModule,
+        HistoryModule,
         RouterModule.forRoot(appRoutes)
     ],
     declarations: [AppComponent, HomeComponent],

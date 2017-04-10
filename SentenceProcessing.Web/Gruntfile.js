@@ -61,6 +61,7 @@
             options: {
                 useHelpers: true,
                 helpers: [
+                    "specHelper.js",
                     "node_modules/zone.js/dist/zone-node.js",
                     "node_modules/reflect-metadata/Reflect.js",
                     "node_modules/systemjs/dist/system.js"

@@ -1,0 +1,1 @@
+﻿type ActionType = "Encode" | "Decode";

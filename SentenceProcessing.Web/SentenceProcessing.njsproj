@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="app\history\history.component.html" />
     <Content Include="app\home.component.html" />
     <Content Include="app\processing\decoding.component.html" />
     <Content Include="app\processing\encoding.component.html" />
@@ -54,6 +55,9 @@
     <Content Include="typings\globals\zone.js\typings.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\history\" />
+    <Folder Include="app\history\models\" />
+    <Folder Include="app\history\services\" />
     <Folder Include="app\processing\" />
     <Folder Include="app\processing\services\" />
     <Folder Include="css\" />
@@ -69,13 +73,19 @@
     <Folder Include="typings\globals\zone.js\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="helpers\testHelper.ts" />
+    <Compile Include="helpers\specHelper.ts" />
     <Compile Include="systemjs.config.js" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\history\history.component.ts" />
+    <TypeScriptCompile Include="app\history\history.module.ts" />
+    <TypeScriptCompile Include="app\history\history.routing.ts" />
+    <TypeScriptCompile Include="app\history\models\action.d.ts" />
+    <TypeScriptCompile Include="app\history\models\actionType.ts" />
+    <TypeScriptCompile Include="app\history\services\historyService.ts" />
     <TypeScriptCompile Include="app\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\processing\decoding.component.ts" />

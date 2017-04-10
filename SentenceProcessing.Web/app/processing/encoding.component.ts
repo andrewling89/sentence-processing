@@ -17,7 +17,7 @@ export class EncodingComponent {
     });
 
     constructor( @Inject(SentenceProcessingService) private sentenceProcessingService: SentenceProcessingService,
-                 @Inject(FormBuilder) private formBuilder: FormBuilder, ) {
+                 @Inject(FormBuilder) private formBuilder: FormBuilder) {
     }
 
     private encodeSentence(e: Event) {

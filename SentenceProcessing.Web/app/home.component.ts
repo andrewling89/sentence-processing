@@ -16,4 +16,8 @@ export class HomeComponent {
     private openDecodeSentence() {
         this.router.navigate(["/decode"]);
     };
+
+    private openHistory() {
+        this.router.navigate(["/history"]);
+    }
 }
