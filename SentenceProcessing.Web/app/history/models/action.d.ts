@@ -2,5 +2,5 @@
     actionType: ActionType,
     input: string,
     output: string,
-    actionTime: Date
+    actionTime: string // Date of action in ISO format.
 }

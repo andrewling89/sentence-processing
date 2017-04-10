@@ -2,6 +2,8 @@
 import { FormGroup, FormControl, FormBuilder, Validators } from "@angular/forms";
 
 import { SentenceProcessingService } from "./services/sentenceProcessingService";
+import { HistoryService } from "../history/services/historyService";
+import { ActionTypes } from "../history/models/actionTypes";
 
 @Component({
     selector: 'decoding',
@@ -17,12 +19,21 @@ export class DecodingComponent {
     });
 
     constructor( @Inject(SentenceProcessingService) private sentenceProcessingService: SentenceProcessingService,
-                 @Inject(FormBuilder) private formBuilder: FormBuilder, ) {
+                 @Inject(HistoryService) private historyService: HistoryService,
+                 @Inject(FormBuilder) private formBuilder: FormBuilder) {
     }
 
     private decodeSentence(e: Event) {
         e.preventDefault();
 
-        this.decodedSentence.setValue(this.sentenceProcessingService.decodeSentence(this.encodedSentence.value));
+        var output = this.sentenceProcessingService.decodeSentence(this.encodedSentence.value);
+        this.decodedSentence.setValue(output);
+
+        this.historyService.addAction({
+            actionType: ActionTypes.Decode,
+            input: this.encodedSentence.value,
+            output: output,
+            actionTime: new Date().toISOString()
+        });
     }
 }

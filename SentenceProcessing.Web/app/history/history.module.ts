@@ -13,7 +13,7 @@ import { historyRoutes } from "./history.routing";
         CommonModule,
         RouterModule.forChild(historyRoutes)
     ],
-    providers: [HistoryService],
+    providers: [{ provide: HistoryService, useFactory: () => new HistoryService(window.localStorage) }],
     declarations: [HistoryComponent],
     exports: [HistoryComponent]
 })

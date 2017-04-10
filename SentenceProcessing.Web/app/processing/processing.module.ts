@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 
 import { SentenceProcessingService } from "./services/sentenceProcessingService";
+import { HistoryService } from "../history/services/historyService";
 
 import { EncodingComponent } from "./encoding.component";
 import { DecodingComponent } from "./decoding.component";
@@ -16,7 +17,7 @@ import { processingRoutes } from "./processing.routing";
         ReactiveFormsModule,
         RouterModule.forChild(processingRoutes)
     ],
-    providers: [SentenceProcessingService],
+    providers: [SentenceProcessingService, { provide: HistoryService, useFactory: () => new HistoryService(window.localStorage) }],
     declarations: [EncodingComponent, DecodingComponent],
     exports: [EncodingComponent, DecodingComponent]
 })

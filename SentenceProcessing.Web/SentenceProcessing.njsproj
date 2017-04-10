@@ -62,7 +62,7 @@
     <Folder Include="app\processing\services\" />
     <Folder Include="css\" />
     <Folder Include="app\" />
-    <Folder Include="helpers\" />
+    <Folder Include="app\helpers\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\bootstrap\" />
@@ -73,7 +73,7 @@
     <Folder Include="typings\globals\zone.js\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="helpers\specHelper.ts" />
+    <Compile Include="app\helpers\specHelper.ts" />
     <Compile Include="systemjs.config.js" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +85,8 @@
     <TypeScriptCompile Include="app\history\history.routing.ts" />
     <TypeScriptCompile Include="app\history\models\action.d.ts" />
     <TypeScriptCompile Include="app\history\models\actionType.ts" />
+    <TypeScriptCompile Include="app\history\models\actionTypes.ts" />
+    <TypeScriptCompile Include="app\history\services\historyService.spec.ts" />
     <TypeScriptCompile Include="app\history\services\historyService.ts" />
     <TypeScriptCompile Include="app\home.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />

@@ -1,1 +1,30 @@
-﻿<h1>This is the History Component.</h1>
+﻿<div id="historyPage">
+    <div class="row">
+        <div class="col-xs-3 col-md-1">
+            <strong>Time</strong>
+        </div>
+        <div class="col-xs-2 col-md-1">
+            <strong>Type</strong>
+        </div>
+        <div class="col-xs-4 col-md-5">
+            <strong>Input</strong>
+        </div>
+        <div class="col-xs-3 col-md-5">
+            <strong>Output</strong>
+        </div>
+    </div>
+    <div class="row" *ngFor="let action of history">
+        <div class="col-xs-3 col-md-1">
+            {{ action.actionTime | date: 'short' }}
+        </div>
+        <div class="col-xs-2 col-md-1">
+            {{ action.actionType }}
+        </div>
+        <div class="col-xs-4 col-md-5">
+            {{ action.input }}
+        </div>
+        <div class="col-xs-3 col-md-5">
+            {{ action.output }}
+        </div>
+    </div>
+</div>

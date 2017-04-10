@@ -7,6 +7,13 @@ import { HistoryService } from "./services/historyService";
     templateUrl: './app/history/history.component.html'
 })
 export class HistoryComponent {
-    constructor(@Inject(HistoryService) private historyService: HistoryService) {
+    private history: Action[];
+
+    constructor( @Inject(HistoryService) private historyService: HistoryService) {
+        this.retrieveHistory();
+    }
+
+    private retrieveHistory() {
+        this.history = this.historyService.retrieveHistory();
     }
 }
