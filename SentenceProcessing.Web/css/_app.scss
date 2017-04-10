@@ -21,9 +21,9 @@ img.comranger-logo {
     height: calc(40vh);
 }
 
-.spacing-20px
-{
-    height: 20px;
+.form-control {
+    margin-left: 15px;
+    width: calc(100% - 30px);
 }
 
 div[class^='col'], div[class*=' col'] {

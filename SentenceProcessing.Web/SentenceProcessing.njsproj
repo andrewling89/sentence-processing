@@ -44,6 +44,7 @@
     <Content Include="css\style.scss" />
     <Content Include="css\_navbar.scss" />
     <Content Include="Gruntfile.js" />
+    <Content Include="images\logo.png" />
     <Content Include="index.html" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
@@ -63,6 +64,7 @@
     <Folder Include="css\" />
     <Folder Include="app\" />
     <Folder Include="app\helpers\" />
+    <Folder Include="images\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\bootstrap\" />
