@@ -1,1 +1,28 @@
-﻿<h1>This is the encoding page.</h1>
+﻿<div id="encodingPage">
+    <form [formGroup]="encodingForm" (ngSubmit)="encodeSentence($event)">
+        <div class="row form-group" [ngClass]="{ 'has-error': !sentence.valid && sentence.touched }">
+            <div class="col-xs-12">
+                <label class="control-label" for="sentence">Sentence:</label>
+            </div>
+            <div clsss="col-xs-12">
+                <input id="sentence" type="text" class="form-control" formControlName="sentence" />
+            </div>
+            <div class="col-xs-12" *ngIf="!sentence.valid && sentence.touched">
+                <div class="alert alert-danger">Sentence is required.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="submit" class="btn btn-primary btn-block" [disabled]="!encodingForm.valid">Encode</button>
+            </div>
+        </div>
+        <div class="row form-group" *ngIf="encodedSentence.value.length > 0">
+            <div class="col-xs-12">
+                <label class="control-label" for="encodedSentence">Encoded Sentence:</label>
+            </div>
+            <div clsss="col-xs-12">
+                <input id="encodedSentence" type="text" class="form-control" formControlName="encodedSentence" />
+            </div>
+        </div>
+    </form>
+</div>

@@ -6,12 +6,16 @@
     "name": "Andrew Ling"
   },
   "devDependencies": {
+    "babel-polyfill": "^6.23.0",
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-jasmine": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-jasmine-nodejs": "^1.6.0",
     "grunt-open": "^0.2.3",
     "grunt-ts": "^6.0.0-beta.15",
+    "jasmine": "^2.5.3",
     "typescript": "^2.2.2"
   },
   "dependencies": {
@@ -22,6 +26,7 @@
     "@angular/platform-browser": "^4.0.1",
     "@angular/platform-browser-dynamic": "^4.0.1",
     "@angular/router": "^4.0.1",
+    "@types/jasmine": "^2.5.47",
     "@types/jquery": "^2.0.41",
     "bootstrap": "^3.3.7",
     "connect-modrewrite": "^0.10.1",

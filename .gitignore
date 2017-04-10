@@ -252,3 +252,5 @@ paket-files/
 *.sln.iml
 /SentenceProcessing.Web/.tscache
 /SentenceProcessing.Web/.sass-cache
+/SentenceProcessing.Web/.grunt
+/SentenceProcessing.Web/_SpecRunner.html
